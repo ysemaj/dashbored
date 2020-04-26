@@ -1,2 +1,2 @@
 # dashbored
-Free-to-use landing page  powered by simple open-source code
+dashbored is an open-source platform that university clubs and societies can use to manage their affairs.
