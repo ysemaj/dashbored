@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <% include ../partials/head %>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="nav">
+        <% include ../partials/nav %>
+    </div>
+
+
+    <div class="container">
+        <div class="text-center">
+            <div class="error-code mb-2 mt-4">
+                <h1 class="display-1 font-weight-bold">404</h1>
+            </div>
+            <h3 class="font-weight-bold">Well this is awkward...</h3>
+            <div class="text-muted my-4">
+                Sorry, but the page you are looking for was either not found or does not exist.
+                <br>
+                Try refreshing the page or click the button below to go back to your previous page.
+                <br><br>
+                <small><%= message %></small>
+                <small><%= error.status %></small>
+                <small><%= error.stack %></small>
+                <div class="mt-3">
+                    <a class="login-detail-panel-button btn btn-outline-danger get-started-button"
+                        href="javascript:history.back()">
+                        Go back
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="container">
+        <% include ../partials/footer %>
+    </footer>
+
+</body>
+
+</html>

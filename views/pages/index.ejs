@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <% include ../partials/head %>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="nav">
+        <% include ../partials/nav %>
+    </div>
+
+    <div class="mt-2">
+
+        <!-- Splash -->
+        <div class="home-splash container">
+            <div class="jumbotron mb-0 text-center transparent">
+                <h1 class="display-5">
+                    An <b>affordable</b> and <b>user-friendly</b> platform to help university clubs and societies manage
+                    their affairs.
+                </h1>
+                <br>
+                <p class="h5 text-muted mx-auto fw-600">Manage your club or society's projects, finances, marketing and
+                    more from one
+                    centralised user-friendly platform.</p>
+            </div>
+            <div class="container pb-5" id="societies">
+                <div class="row justify-content-center overlay">
+                    <img class="home-splash-clients" src="images/users/aberlawsoc-grey.png">
+                    <img class="home-splash-clients" src="images/users/aberuni-grey.png">
+                    <img class="home-splash-clients" src="images/users/abercompsoc-grey.png">
+                    <img class="home-splash-clients" src="images/users/abercrimsoc-grey.png">
+                    <img class="home-splash-clients" src="images/users/abersu-grey.png">
+                </div>
+                <!-- <div class="text-center mt-5">
+                    <p class="text-muted greyblue text-sm">and over fifty more clubs and societies.</p>
+                </div> -->
+            </div>
+            <div id="screenshot">
+                <img class="rounded img-fluid mx-auto shadow-lg" src="images/example.png">
+            </div>
+            <div class="space-100"></div>
+        </div>
+
+        <!-- Features -->
+        <div class="home-features gradient-purple">
+            <div class="wave">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#eff2f9" fill-opacity="1"
+                        d="M0,128L80,133.3C160,139,320,149,480,170.7C640,192,800,224,960,229.3C1120,235,1280,213,1360,202.7L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+                    </path>
+                </svg>
+            </div>
+
+            <div class="jumbotron text-center transparent">
+                <h2 class="display-4">Features</h2>
+                <div class="space-50"></div>
+                <div class="container pt-4">
+                    <div class="row">
+                        <div class="col-sm text-left">
+                            <div class="media">
+                                <div class="my-auto mr-4">
+                                    <div class="fa-4x">
+                                        <i class="fas fa-server" data-fa-transform="shrink-8"
+                                            data-fa-mask="fas fa-circle 4x"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="h4">High Performance</h3>
+                                    <p class="">Built with performance in mind, dashbored utilises the Node.js engine
+                                        running on dedicated servers to
+                                        ensure blindingly fast load times.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm text-left">
+                            <div class="media">
+                                <div class="my-auto mr-4">
+                                    <div class="fa-4x">
+                                        <i class="fas fa-lock" data-fa-transform="shrink-8"
+                                            data-fa-mask="fas fa-circle 4x"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="h4">Impenetrable Security</h3>
+                                    <p class="">We know how important data security is to you. That's why we've
+                                        integrated
+                                        various systems to ensure that your data is safe and GDPR compliant.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-50"></div>
+                    <div class="row">
+                        <div class="col-sm text-left">
+                            <div class="media">
+                                <div class="my-auto mr-4">
+                                    <div class="fa-4x">
+                                        <i class="fas fa-paint-brush" data-fa-transform="shrink-8"
+                                            data-fa-mask="fas fa-circle 4x"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="h4">Easily Customisable</h3>
+                                    <p class="">Easily customise your dashbored platform from the preferences page based
+                                        upon aesthetic or accessibility needs. Oh,
+                                        and did we mention dark mode?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm text-left">
+                            <div class="media">
+                                <div class="my-auto mr-4">
+                                    <div class="fa-4x">
+                                        <i class="fas fa-users" data-fa-transform="shrink-8"
+                                            data-fa-mask="fas fa-circle 4x"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="h4">Create Teams</h3>
+                                    <p class="">Using the built in admin console, you are able to create individual
+                                        profiles for each of your team mates, and manage their privileges, access
+                                        logs and
+                                        much
+                                        more.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-50"></div>
+                    <div class="row">
+                        <div class="col-sm text-left">
+                            <div class="media">
+                                <div class="my-auto mr-4">
+                                    <div class="fa-4x">
+                                        <i class="fas fa-tasks" data-fa-transform="shrink-8"
+                                            data-fa-mask="fas fa-circle 4x"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="h4">Centralise Projects</h3>
+                                    <p class="">Use the built-in project management features to centralise your largest
+                                        events and collaborate at scale - either within your team or with other
+                                        dashbored users.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-50"></div>
+                        <div class="col-sm text-left">
+                            <div class="media">
+                                <div class="my-auto mr-4">
+                                    <div class="fa-4x">
+                                        <i class="fas fa-pound-sign" data-fa-transform="shrink-8"
+                                            data-fa-mask="fas fa-circle 4x"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="h4">Manage Finances</h3>
+                                    <p class="">Forget the frustration of managing and viewing your finances by using
+                                        our built in finance management features, such as invoice tracking, real-time
+                                        balance updates, and more.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-50"></div>
+                    <div class="row">
+                        <div class="col-sm text-left">
+                            <div class="media">
+                                <div class="my-auto mr-4">
+                                    <div class="fa-4x">
+                                        <i class="fas fa-chart-bar" data-fa-transform="shrink-8"
+                                            data-fa-mask="fas fa-circle 4x"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="h4">Integrated Analytics</h3>
+                                    <p class="">Using our integrated datapoint collection and analytics functions and,
+                                        you can view your KPI's all in one
+                                        place, and view historical data to make informed decisions in the future.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-50"></div>
+                        <div class="col-sm text-left">
+                            <div class="media">
+                                <div class="my-auto mr-4">
+                                    <div class="fa-4x">
+                                        <i class="fas fa-bell" data-fa-transform="shrink-8"
+                                            data-fa-mask="fas fa-circle 4x"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="h4">Push Notifications</h3>
+                                    <p class="">Refreshing your page is a thing of the past thanks to our very
+                                        own custom-built REST API which ensures that your dashbored is always
+                                        up-to-date and showing the latest data.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wave">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#eff2f9" fill-opacity="1"
+                        d="M0,192L80,170.7C160,149,320,107,480,106.7C640,107,800,149,960,165.3C1120,181,1280,171,1360,165.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+
+        <!-- The Team -->
+        <div class="home-about">
+            <div class="jumbotron text-center transparent">
+                <h2 class="h3">The 'Team'</h2>
+                <div class="space-50"></div>
+                <div class="card w-50 mx-auto">
+                    <div class="card-body">
+                        <img class="rounded headshot" src="images/james.png">
+                        <h2 class="h2 pb-2">James Watson</h2>
+                        <p class="text-muted">James is the sole founder of the one-man-band that
+                            is
+                            dashbored.
+                            He is responsible
+                            for everything from design and back-end web development, to marketing and customer service.
+                        </p>
+                        <p><a class="btn btn-outline-dark mt-2" href="#" role="button">Read more</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Spacer -->
+        <div class="space-100"></div>
+
+        <!-- Sponsors & Backers -->
+        <div class="home-backers" id="backers-background">
+            <div class="jumbotron text-center transparent">
+                <div class="container">
+                    <h2 class="h3">Sponsors & Backers</h2>
+                    <p>The dashbo.red platform is being funded using the generous donations of our initial
+                        sponsors.</p>
+                    <br>
+                    <div class="pt-2">
+                        <a class="btn btn-outline-light mr-2" href="legal/investors">View Sponsors</a>
+                        <a class="btn btn-outline-danger ml-2" href="legal/investors">Make Donation</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Spacer -->
+        <div class="space-100"></div>
+
+        <!-- Documentation -->
+        <div class="home-docs">
+            <div class="jumbotron text-center transparent">
+                <h2 class="h3">Documentation</h2>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="text-center mb-10">
+                                <p class="lead">Comprehensive documentation includes usage instructions, version
+                                    releases, and
+                                    more.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 text-center mb-5">
+                            <div class="display-1 font-weight-bold greyblue">70+</div>
+                            <div class="h5">Custom/Extended Components</div>
+                            <p>We've extended and restyled Bootstrap's default components, and built a suite of new
+                                custom
+                                components.
+                            </p>
+                        </div>
+                        <div class="col-lg-4 text-center mb-5">
+                            <div class="display-1 font-weight-bold greyblue">35+</div>
+                            <div class="h5">Pre-Built Page Examples</div>
+                            <p>Our pre-built page examples are a perfect way to get inspired for creating new pages and
+                                views.</p>
+                        </div>
+                        <div class="col-lg-4 text-center mb-5">
+                            <div class="display-1 font-weight-bold greyblue">100+</div>
+                            <div class="h5">Custom/Extended Utilites</div>
+                            <p>We've extended and created new utility classes to give you more control over your content
+                                with minimal
+                                custom CSS.</p>
+                        </div>
+                    </div>
+                    <div class="text-center"><a class="btn btn-marketing btn-primary rounded-pill lift lift-sm"
+                            href="https://docs.dashbo.red/">View Documentation</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Get Started -->
+        <div class="home-start">
+            <div class="jumbotron text-center transparent">
+                <h2 class="h3">Get Started</h2>
+            </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="home-newsletter gradient-red">
+            <div class="wave">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#eff2f9" fill-opacity="1"
+                        d="M0,0L48,26.7C96,53,192,107,288,122.7C384,139,480,117,576,133.3C672,149,768,203,864,202.7C960,203,1056,149,1152,106.7C1248,64,1344,32,1392,16L1440,0L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                    </path>
+                </svg>
+            </div>
+            <div class="jumbotron text-center transparent">
+                <h2 class="h3">Subscribe to our newsletter</h2>
+                <p class="">Get notified about important announcements and new releases.</p>
+                <div class="row text-center">
+                    <div class="col col-lg-4 col-center mx-auto">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Email address">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-light">Subscribe</button>
+                            </div>
+                        </div>
+
+                        <label class="text-sm">View our privacy policy <a class="text-sm"
+                                href="legal/privacy">here.</a></label>
+                    </div>
+                </div>
+            </div>
+            <div class="wave">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#eff2f9" fill-opacity="1"
+                        d="M0,64L60,69.3C120,75,240,85,360,80C480,75,600,53,720,85.3C840,117,960,203,1080,197.3C1200,192,1320,96,1380,48L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="container">
+        <% include ../partials/footer %>
+    </footer>
+
+</body>
+
+</html>

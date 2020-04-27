@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <% include ../partials/head %>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="nav">
+        <% include ../partials/nav %>
+    </div>
+
+    <div class="container">
+        <h1 class="h1-responsive my-4">Contact</h1>
+        <section class="mb-4">
+            <div class="row">
+                <div class="col-md-12 mb-md-0 mb-5">
+                    <p class="text-muted greyblue">We aim to respond to most messages in three to five working days,
+                        however it could take longer depending on the request.</p>
+                    <form id="contact-form" name="contact-form" action="#" method="POST">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <label for="name" class="">Your name</label>
+                                    <input type="text" id="name" name="name" placeholder="John Doe"
+                                        class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <label for="email" class="">Your email</label>
+                                    <input type="text" id="email" name="email" placeholder="john@doe.com"
+                                        class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <label for="subject" class="">Subject</label>
+                                    <input type="text" id="subject" name="subject" placeholder="Your Awesome Website"
+                                        class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-12">
+                                <div class="md-form">
+                                    <label for="message">Your message</label>
+                                    <textarea type="text" id="message" name="message" rows="2"
+                                        placeholder="I just wanted to tell you how much I love your awesome website!"
+                                        class="form-control md-textarea"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="text-center mx-auto mt-4">
+                        <button class="btn btn-outline-danger get-started-button">
+                            <a class="mx-3 get-started-text"
+                                onclick="document.getElementById('contact-form').submit();">Submit Form</a>
+                        </button>
+                    </div>
+                </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="container">
+        <% include ../partials/footer %>
+    </footer>
+</body>
+
+</html>

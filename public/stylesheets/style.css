@@ -1,0 +1,216 @@
+:root {
+    --dashbored-background: #eff2f9;
+    --dashbored-text-dark: #051441;
+    --dashbored-text-lightgrey: #e7e7e7;
+    --dashbored-text-midgrey: #6c757d;
+    --dashbored-text-bluegrey: #677294;
+    --dashbored-text-light: #fafafa;
+    --dashbored-orange-light: #ffc966;
+    --dashbored-orange-mid: #ffae19;
+    --dashbored-orange-dark: #ffa500;
+    --dashbored-blue-light: #9999ff;
+    --dashbored-blue-mid: #4c4cff;
+    --dashbored-blue-dark: #3232ff;
+    --dashbored-red-light: #ee5338;
+    --dashbored-red-mid: #ee3d1d;
+    --dashbored-red-dark: #c22003;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    background-color: var(--dashbored-background);
+    text-align: justify !important;
+    position: relative !important;
+}
+
+#logo-img {
+    width: 60px
+}
+
+.navigation a {
+    font-weight: 500;
+    color: var(--dashbored-text-dark);
+    padding-right: 50px;
+}
+
+.navigation a:hover {
+    color: var(--dashbored-red-mid);
+    text-decoration: none;
+}
+
+.transparent {
+    background-color: rgb(0, 0, 0, 0)
+}
+
+.fw-600 {
+    width: 600px;
+}
+
+.gradient-blue {
+    background: rgb(58, 59, 180);
+    background: linear-gradient(45deg, rgba(58, 59, 180, 1) 0%, rgba(29, 230, 253, 1) 100%);
+    color: var(--dashbored-text-light);
+}
+
+.gradient-red {
+    background: rgb(227, 84, 41);
+    background: linear-gradient(45deg, rgba(227, 84, 41, 1) 0%, rgba(253, 29, 107, 1) 100%);
+    color: var(--dashbored-text-light);
+}
+
+.gradient-purple {
+    background: rgb(113, 41, 227);
+    background: linear-gradient(45deg, rgba(113, 41, 227, 1) 0%, rgba(254, 87, 235, 1) 100%);
+    color: var(--dashbored-text-light);
+}
+
+.get-started-text {
+    color: var(--dashbored-red-mid);
+}
+
+.get-started-text:hover {
+    color: var(--dashbored-red-mid);
+    text-decoration: none;
+    background-color: rgb(0, 0, 0, 0) !important;
+}
+
+.get-started-button:hover {
+    background-color: rgba(236, 56, 24, 0.25) !important;
+}
+
+#navbar {
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.home-splash {
+    min-height: 100vh;
+}
+
+.home-splash-clients {
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.space-50 {
+    height: 50px;
+}
+
+.space-100 {
+    height: 100px;
+}
+
+.space-150 {
+    height: 150px;
+}
+
+#societies {
+    margin-bottom: 50px;
+}
+
+.greyblue {
+    color: var(--dashbored-text-bluegrey) !important;
+}
+
+.footer-icon svg {
+    margin-right: 7.5px;
+    transition: 0.5 ease;
+}
+
+.footer-icon svg:hover {
+    color: var(--dashbored-red-mid);
+}
+
+.footer-icon a {
+    color: black;
+}
+
+.text-sm {
+    font-size: 9pt;
+    color: var(--dashbored-text-light);
+}
+
+.text-sm:hover {
+    text-decoration: none;
+    color: var(--dashbored-text-light);
+}
+
+.text-sm a {
+    text-decoration: underline dotted;
+}
+
+.col-centered {
+    margin: 0 auto;
+    float: none;
+}
+
+.headshot {
+    height: 140px;
+}
+
+.home-backers {
+    color: var(--dashbored-text-lightgrey);
+}
+
+#backers-background {
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0, 0.75);
+}
+
+#backers-background:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(../images/dashbored-icons-pattern.png);
+    background-position: center center;
+    animation: slide 30s linear infinite;
+}
+
+@keyframes slide {
+    from {
+        background-position: 0% 0%;
+    }
+
+    to {
+        background-position: 0% 98%;
+    }
+}
+
+.affix {
+    top: 125px;
+    position: fixed;
+}
+
+table {
+    text-align: left;
+}
+
+h2::before {
+    display: block;
+    content: " ";
+    margin-top: -125px;
+    height: 125px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.legal-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.slow .toggle-group {
+    transition: left 0.7s;
+    -webkit-transition: left 0.7s;
+}
