@@ -1,2 +1,5 @@
 # dashbored
-dashbored is an open-source platform that university clubs and societies can use to manage their affairs.
+dashbored is a web-based platform built using node.js, hosted on AWS, which allows university clubs and societies to manage their affairs. Technical features include:
+
+* OpenAthens and SAML authentication
+* 

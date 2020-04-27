@@ -14,10 +14,6 @@ router.get('/pricing', function (req, res, next) {
   res.render('pricing', { title: 'Pricing' });
 });
 
-router.get('/posts', function (req, res, next) {
-  res.render('posts', { title: 'Posts' });
-});
-
 router.get('/contact', function (req, res, next) {
   res.render('contact', { title: 'Contact' });
 });

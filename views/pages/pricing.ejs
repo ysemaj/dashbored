@@ -10,8 +10,6 @@
         <% include ../partials/nav %>
     </div>
 
-    <div class="space-150"></div>
-
     <div class="text-center">
         <h1 class="pb-2">Pricing</h1>
         <p class="text-muted">We like to keep things simple around here.</p>
@@ -35,7 +33,7 @@
                                 <label class="text-muted pr-3">Annual</label>
                                 <input type="checkbox" checked data-toggle="toggle" data-onstyle="primary"
                                     data-offstyle="light" data-width="50" data-height="10" data-size="xs" data-on=" "
-                                    data-off=" " data-style="slow">
+                                    data-off=" " data-style="slow" onClick="togglePricing()">
                                 <label class="text-muted pl-3">Monthly</label>
                             </div>
                         </div>
@@ -146,8 +144,7 @@
     <footer id="footer" class="container">
         <% include ../partials/footer %>
     </footer>
+
 </body>
-
-
 
 </html>
