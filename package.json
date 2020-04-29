@@ -7,12 +7,19 @@
     "devstart": "nodemon ./bin/www"
   },
   "dependencies": {
+    "aws-sdk": "^2.664.0",
     "cookie-parser": "~1.4.4",
+    "countdown": "^2.6.0",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
-    "morgan": "~1.9.1"
+    "moment": "^2.24.0",
+    "moment-countdown": "0.0.3",
+    "mongoose": "^5.9.10",
+    "morgan": "~1.9.1",
+    "nanit": "^0.3.1",
+    "request": "^2.88.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.3"

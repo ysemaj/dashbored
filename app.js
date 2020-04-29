@@ -1,12 +1,15 @@
+// this section contains the node.js requires
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+// this section deals with routing of other .js files
 var indexRouter = require('./routes/index');
 var legalRouter = require('./routes/legal');
 
+// deals with the express server initialization
 var app = express();
 
 // view engine setup

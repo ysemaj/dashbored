@@ -1,25 +1,65 @@
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0&appId=2176243862437674&autoLogAppEvents=1">
+</script>
+
 <nav id="navbar" class="navbar fixed-top flex-md-nowrap">
     <div class="col logo">
         <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
             <img class="logo-img" src="../images/logo.png" id="logo-img" alt="dashbored logo">
         </a>
     </div>
-    <div class="navigation pl-5">
-        <a class="navigation-link" id="navigation-home" href="/">Home</a>
-        <a class="navigation-link" id="navigation-about" href="/about">About</a>
-        <a class="navigation-link" id="navigation-pricing" href="/pricing">Pricing</a>
-        <a class="navigation-link" id="navigation-docs" href="/customers">Customers</a>
-        <a class="navigation-link" id="navigation-contact" href="/contact">Contact</a>
-    </div>
+    <ul class="navigation pl-5 my-auto">
+        <li><a class="navigation-link" id="navigation-home" href="/">Home</a></li>
+        <li class="navigation-link dropdown open-on-hover">
+            <a class="" href="/about" id="navigation-about" data-toggle="dropdown">About</a>
+            <div class="dropdown-menu shadow-sm">
+                <h6 class="dropdown-header">About</h6>
+                <a class="dropdown-item">About</a>
+                <small>Our story, team, goals</small>
+                <a class="dropdown-item">Customers</a>
+                <a class="dropdown-item">Partners</a>
+                <a class="dropdown-item">Awards</a>
+                <a class="dropdown-item">Item 2</a>
+            </div>
+        </li>
+        <li><a class="navigation-link" id="navigation-pricing" href="/pricing">Pricing</a></li>
+        <li><a class="navigation-link" id="navigation-docs" href="/customers">Customers</a></li>
+        <li><a class="navigation-link" id="navigation-contact" href="/contact">Contact</a></li>
+    </ul>
     <div class="col-auto get-started">
+        <% if(3==4){ %>
         <button class="btn btn-outline-danger get-started-button">
-            <% if(3==4){ %>
             <a class="mx-3 get-started-text">Welcome back, James</a>
-            <% } else { %>
-            <a class="mx-3 get-started-text" href="/register">Get Started</a>
-            <% } %>
         </button>
+        <% } else { %>
+        <button class="btn btn-outline-danger get-started-button" href="#" data-toggle="modal"
+            data-target="#registerModal">
+            <a class="mx-3 get-started-text">Get
+                Started</a>
+        </button>
+        <% } %>
     </div>
 </nav>
 
 <div class="space-150"></div>
+
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel">Get Started</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <% include ../partials/register %>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-danger get-started-button">Register</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

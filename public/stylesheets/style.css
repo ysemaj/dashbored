@@ -24,11 +24,25 @@ body {
     background-color: var(--dashbored-background);
     text-align: justify !important;
     position: relative !important;
+    padding-right: none !important;
 }
 
 #logo-img {
     width: 60px
 }
+
+a {
+    font-weight: 500;
+    color: var(--dashbored-red-mid);
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: 500;
+    color: var(--dashbored-red-mid);
+    text-decoration: none;
+}
+
 
 .navigation a {
     font-weight: 500;
@@ -72,13 +86,13 @@ body {
 }
 
 .get-started-text:hover {
-    color: var(--dashbored-red-mid);
+    color: var(--dashbored-red-mid) !important;
     text-decoration: none;
-    background-color: rgb(0, 0, 0, 0) !important;
 }
 
 .get-started-button:hover {
-    background-color: rgba(236, 56, 24, 0.25) !important;
+    background-color: rgba(236, 56, 24, 0.1) !important;
+    color: var(--dashbored-red-mid);
 }
 
 #navbar {
@@ -213,4 +227,23 @@ h2::before {
 .slow .toggle-group {
     transition: left 0.7s;
     -webkit-transition: left 0.7s;
+}
+
+.dotted-tooltip {
+    color: var(--dashbored-text-midgrey);
+    text-decoration: none;
+}
+
+.navigation li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.navigation li a:focus,
+.navigation li a:hover {
+    outline: none;
+}
+
+.dropdown-menu {
+    margin-top: 10px;
 }
