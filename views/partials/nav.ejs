@@ -13,12 +13,12 @@
     </div>
     <ul class="navigation pl-5 my-auto" id="navigation-bar">
         <li><a class="navigation-link" id="navigation-home" href="/">Home</a></li>
-        <li class="navigation-link dropdown show-on-hover ">
+        <li class="navigation-link dropdown show-on-hover">
             <a href="/about" id="navigation-about" data-toggle="dropdown" data-hover="dropdown"
                 data-animations="fadeInLeft">About <i class="fas fa-caret-down"></i></a>
             <div class="dropdown-menu shadow-sm" style="width: 600px">
                 <div class="row">
-                    <div class="col ml-2 mt-1">
+                    <div class="col ml-2 mt-1" id="left-dropdown">
                         <div class="dropdown-item pt-3" id="dropdown-about">
                             <a class="h6" href="/about">About</a>
                             <p class="text-muted">Our story, team, goals</p>
@@ -37,7 +37,7 @@
                         </div>
                     </div>
                     <div class="vr mr-2 mt-1"></div>
-                    <div class="col">
+                    <div class="col pl-0" id="right-dropdown">
                         <h4 class="dropdown-header text-uppercase" id="dropdown-about-news">N e w s</h4>
                         <div class="dropdown-item" id="dropdown-about">
                             <a class="" href="#">This is news</a>

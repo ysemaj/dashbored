@@ -11,6 +11,8 @@ To-do list created on 10 May 2020 for future development tasks.
     - [ ] Sort order of styles
     - [ ] Include cross-browser support attributes
     - [ ] Merge styles using , separator
+- [ ] Images
+    - [ ] Compress all /images to speed up load time
 - [ ] Includes
     - [ ] SEO integration via NPM
     - [ ] Enable CORS
@@ -41,14 +43,17 @@ To-do list created on 10 May 2020 for future development tasks.
 - [ ] Footer
     - [ ] Link 'made with ❤ in Shrewsbury, United Kingdom' to GitHub repositry
 - [ ] Cookies
-    - [ ] Add cookie modal
+    - [x] Add cookie modal
+    - [ ] Add functionality
+        - [ ] close
+        - [ ] customise preferences
     - [ ] Store preference
         - [ ] Local storage
         - [ ] DynamoDB
 
 ## Navigation
 
-- [ ] Fix ```padding-right: 16px;``` issue when opening modal
+- [x] Fix ```padding-right: 16px;``` issue when opening modal
 - [ ] About
     - [ ] Fix /about dropdown
     - [ ] Fix ::before moving when hovering off /about dropdown after click

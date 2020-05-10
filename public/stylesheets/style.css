@@ -32,7 +32,7 @@ footer {
     background-color: var(--dashbored-background);
     text-align: justify !important;
     padding-right: none !important;
-    z-index: -10;
+    z-index: 0;
 }
 
 main {
@@ -69,6 +69,11 @@ a:hover {
 
 .transparent {
     background-color: rgb(0, 0, 0, 0)
+}
+
+#screenshot {
+    /* filter: blur(2px); */
+    padding-top: 50px;
 }
 
 .fw-600 {
@@ -116,7 +121,7 @@ a:hover {
 }
 
 .home-splash {
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .home-splash-clients {
@@ -465,8 +470,14 @@ body.modal-open[style] {
     width: 0 !important;
 }
 
-.dropdown-item:hover {
+#left-dropdown .dropdown-item:hover {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    color: var(--dashbored-red-mid) !important;
+}
+
+
+#right-dropdown .dropdown-item:hover {
     background-color: white;
     color: var(--dashbored-red-mid) !important;
 }
@@ -555,10 +566,10 @@ body.modal-open[style] {
 }
 
 #cookie-wrapper {
+    margin: 0 auto;
     z-index: 2000;
     bottom: 0;
     position: fixed;
-    width: 100%;
     background: var(--dashbored-text-dark);
     color: white;
     padding: 10px;
