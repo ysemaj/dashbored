@@ -2,64 +2,63 @@
 <html lang="en">
 
 <head>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
-        </script>
-    <script>
-        $(function () {
-            $("head").load("partial/head.html");
-            $("#nav").load("partial/nav.html");
-            $("#footer").load("partial/footer.html");
-        });
-    </script>
+    <% include ../partials/head.ejs %>
 </head>
 
 <body>
+    <!-- Navbar -->
+    <div id="nav">
+        <% include ../partials/nav %>
+    </div>
 
-    <div id="nav"></div>
+    <body>
+        <main role="main" class="container">
+            <div class="text-center">
+                <form class="form-signin">
+                    <div class="login d-flex align-items-center py-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-9 col-lg-8 mx-auto">
+                                    <h1 class="h1 mb-4">Welcome back!</h1>
+                                    <form>
+                                        <div class="form-label-group">
+                                            <input type="email" id="inputEmail" class="form-control"
+                                                placeholder="Email address" required autofocus>
+                                            <label class="text-left" for="inputEmail">Email address</label>
+                                        </div>
 
-    <div class="text-center">
-        <form class="form-signin">
-            <div class="container-fluid">
-                <div class="login d-flex align-items-center py-5">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-9 col-lg-8 mx-auto">
-                                <h1 class="h1 mb-4">Welcome back!</h1>
-                                <form>
-                                    <div class="form-label-group">
-                                        <input type="email" id="inputEmail" class="form-control"
-                                            placeholder="Email address" required autofocus>
-                                        <label class="text-left" for="inputEmail">Email address</label>
-                                    </div>
+                                        <div class="form-label-group">
+                                            <input type="password" id="signinPassword" class="form-control"
+                                                placeholder="Password" required>
+                                            <label class="text-left" for="signinPassword">Password</label>
+                                        </div>
 
-                                    <div class="form-label-group">
-                                        <input type="password" id="inputPassword" class="form-control"
-                                            placeholder="Password" required>
-                                        <label class="text-left" for="inputPassword">Password</label>
-                                    </div>
-
-                                    <div class="custom-control custom-checkbox mb-3">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                        <label class="custom-control-label" for="customCheck1">Remember
-                                            password</label>
-                                    </div>
-                                    <button
-                                        class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2"
-                                        type="submit">Sign in</button>
-                                    <div class="text-center">
-                                        <a class="small" href="#">Forgot password?</a></div>
-                                </form>
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="rememberPassword">
+                                            <label class="custom-control-label" for="rememberPassword">Remember
+                                                password</label>
+                                        </div>
+                                        <button
+                                            class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2"
+                                            type="submit">Sign in</button>
+                                        <div class="text-center">
+                                            <a class="small" href="/forgot-password">Forgot password?</a></div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
-        </form>
-    </div>
-    <footer id="footer" class="container"></footer>
+        </main>
 
-</body>
+        <footer id="footer" class="container">
+            <% include ../partials/footer %>
+        </footer>
+    </body>
+
+</html>
+
 
 <style>
     :root {
@@ -73,7 +72,7 @@
 
     .login,
     .image {
-        min-height: 100vh;
+        min-height: 50vh;
     }
 
     .bg-image {

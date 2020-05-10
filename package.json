@@ -1,25 +1,30 @@
 {
-  "name": "ejs",
-  "version": "0.0.0",
+  "name": "dashbored-landing",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "devstart": "nodemon ./bin/www"
+    "devstart": "nodemon ./bin/www --watch views -e ejs",
+    "build": "npm build",
+    "clean": "rm -rf node_modules",
+    "reinstall": "npm run clean && npm install",
+    "rebuild": "npm run clean && npm install && npm run build"
   },
   "dependencies": {
     "aws-sdk": "^2.664.0",
     "cookie-parser": "~1.4.4",
-    "countdown": "^2.6.0",
+    "cors": "^2.8.5",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
+    "eslint": "^7.0.0",
     "express": "~4.16.1",
+    "helmet": "^3.22.0",
     "http-errors": "~1.6.3",
-    "moment": "^2.24.0",
-    "moment-countdown": "0.0.3",
     "mongoose": "^5.9.10",
     "morgan": "~1.9.1",
     "nanit": "^0.3.1",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "uuid": "^8.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.3"

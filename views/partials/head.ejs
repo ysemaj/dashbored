@@ -1,86 +1,29 @@
-<!-- Metadata -->
 <meta name="robots" content="noindex">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!-- Title -->
-<title><%- title %></title>
-
-<!-- Favicon -->
+<title><%= (typeof title != "undefined" ? title : "") %></title>
 <link rel="icon" href="images/dashbored.ico" />
 
-<!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
-
-<!-- JQuery -->
-<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous">
-</script>
-
-<!-- Tooltip -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 
 <!-- boostrap.min.css -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-<!-- Font awesome  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
-    integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
-
-<!-- Countup.js -->
-<script src="https://cdn.jsdelivr.net/npm/countup@1.8.2/dist/countUp.min.js"></script>
-
 <!-- Bootstrap Toggle -->
 <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
     rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
 
 <!-- Bootstrap Social -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css"
     integrity="sha256-rFMLRbqAytD9ic/37Rnzr2Ycy/RlpxE5QH52h7VoIZo=" crossorigin="anonymous" />
 
-
-<script src="https://platform.linkedin.com/in.js" type="text/javascript">
-    api_key: {
-        YOUR_API_KEY_GOES_HERE
-    }
-    authorize: true
-    lang: en_US
-</script>
-
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163883785-1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-163883785-1');
-</script>
-
-<script>
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
-</script>
-
-<script>
-    $(document).on('mouseenter mouseleave', '.dropdown.open-on-hover', function (e) {
-        let toggler = $(this).find('[data-toggle="dropdown"]').first();
-
-        if (e.type === 'mouseenter') {
-            $(toggler).trigger('click', 'open');
-        } else if ($(this).children('.dropdown-menu.show').length) {
-            $(toggler).trigger('click', 'close');
-        }
-    });
-</script>
+<!-- Animate.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
 
 <!-- Custom CSS -->
-<link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
-<link rel="stylesheet" type="text/css" href="../stylesheets/pricing.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/style.css" />
+<link rel="stylesheet" type="text/css" href="../stylesheets/pricing.css" />

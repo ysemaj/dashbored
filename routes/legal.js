@@ -19,8 +19,8 @@ router.get('/payments', function (req, res, next) {
     res.render('legal/payments', { title: 'Payments' });
 });
 
-router.get('/terms-and-conditions', function (req, res, next) {
-    res.render('legal/terms-and-conditions', { title: 'Terms & Conditions' });
+router.get('/terms', function (req, res, next) {
+    res.render('legal/terms', { title: 'Terms & Conditions' });
 });
 
 router.get('/user-agreement', function (req, res, next) {

@@ -12,58 +12,78 @@
     </div>
 
     <div class="container">
-        <h1 class="h1-responsive my-4">Contact</h1>
-        <section class="mb-4">
-            <div class="row">
-                <div class="col-md-12 mb-md-0 mb-5">
-                    <p class="text-muted greyblue">We aim to respond to most messages in three to five working days,
-                        however it could take longer depending on the request.</p>
-                    <form id="contact-form" name="contact-form" action="#" method="POST">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <label for="name" class="">Your name</label>
-                                    <input type="text" id="name" name="name" placeholder="John Doe"
-                                        class="form-control">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <label for="email" class="">Your email</label>
-                                    <input type="text" id="email" name="email" placeholder="john@doe.com"
-                                        class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-4">
-                            <div class="col-md-12">
-                                <div class="md-form mb-0">
-                                    <label for="subject" class="">Subject</label>
-                                    <input type="text" id="subject" name="subject" placeholder="Your Awesome Website"
-                                        class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-4">
-                            <div class="col-md-12">
-                                <div class="md-form">
-                                    <label for="message">Your message</label>
-                                    <textarea type="text" id="message" name="message" rows="2"
-                                        placeholder="I just wanted to tell you how much I love your awesome website!"
-                                        class="form-control md-textarea"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-
-                    <div class="text-center mx-auto mt-4">
-                        <button class="btn btn-outline-danger get-started-button">
-                            <a class="mx-3 get-started-text"
-                                onclick="document.getElementById('contact-form').submit();">Submit Form</a>
-                        </button>
-                    </div>
+        <h1 class="h1-responsive mb-4">Contact</h1>
+        <div class="row">
+            <div class="col">
+                <p class="text-muted pr-5 greyblue">We aim to respond to most messages in three
+                    to five working
+                    days,
+                    however it could take longer depending on the request.</p>
+                <img class="characters" src="../images/characters/people.png">
+                <div class="blob">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+                        <g transform="translate(300,250)">
+                            <path
+                                d="M110.7,-89.8C157.4,-29.8,218.6,17,220.1,66.1C221.5,115.3,163.3,166.6,101.4,187.5C39.6,208.4,-25.7,198.8,-81.6,171.2C-137.4,143.6,-183.8,98.1,-206.4,36.4C-229,-25.3,-227.8,-103,-189.5,-161.1C-151.2,-219.2,-75.6,-257.6,-21.8,-240.3C32.1,-222.9,64.1,-149.8,110.7,-89.8Z"
+                                fill="#d7dae1" />
+                        </g>
+                    </svg>
                 </div>
-        </section>
+            </div>
+            <div class="col">
+                <section class="mb-4">
+                    <div class="row">
+                        <div class="col-md-12 mb-md-0 mb-5">
+                            <form id="contact-form" name="contact-form" action="#" method="POST">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="md-form mb-0">
+                                            <label for="name" class="">Full name</label>
+                                            <input type="text" id="name" name="name" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="md-form mb-0">
+                                            <label for="email" class="">Email address</label>
+                                            <input type="text" id="contact-email" name="email" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-md-12">
+                                        <div class="md-form mb-0">
+                                            <label for="subject" class="">Subject</label>
+                                            <input type="text" id="subject" name="subject" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-md-12">
+                                        <div class="md-form">
+                                            <label class="pr-2" for="message">Message </label><a
+                                                class="contact-form-attachment" href="#"><i class="fas fa-link"
+                                                    data-fa-transform="shrink-2"></i></a>
+                                            <textarea type="text" id="message" name="message" rows="2"
+                                                class="form-control md-textarea"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div class="text-center mx-auto mt-4">
+                                <button class="btn btn-outline-danger get-started-button">
+                                    <a class="mx-3 get-started-text"
+                                        onclick="document.getElementById('contact-form').submit();">Submit Form</a>
+                                </button>
+                            </div>
+                            <div class="text-center mx-auto pt-2">
+                                <small class="text-muted"><a href="mailto:james@dashbo.red?subject=Contact">Prefer
+                                        email?</a></small>
+                            </div>
+                        </div>
+                </section>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->

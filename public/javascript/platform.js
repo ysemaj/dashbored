@@ -12,10 +12,8 @@ function showPage() {
     document.getElementById("dashboard-content").style.display = "block";
 }
 
-// Hide submenus
 $('#body-row .collapse').collapse('hide');
 
-// Collapse click
 $('[data-toggle=sidebar-collapse]').click(function () {
     SidebarCollapse();
 });
@@ -26,7 +24,5 @@ function SidebarCollapse() {
     $('.sidebar-text').toggleClass('d-none');
     $('.submenu-icon').toggleClass('d-none');
     $('#sidebar-container').toggleClass('sidebar-expanded sidebar-collapsed');
-
-    // Collapse/Expand icon
     $('#collapse-icon').toggleClass('fa-angle-left fa-angle-right');
-}
+};

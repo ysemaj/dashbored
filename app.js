@@ -8,6 +8,9 @@ var logger = require('morgan');
 // this section deals with routing of other .js files
 var indexRouter = require('./routes/index');
 var legalRouter = require('./routes/legal');
+var aws = require('./routes/aws');
+var cookie = require('./routes/cookie');
+var mongo = require('./routes/mongo')
 
 // deals with the express server initialization
 var app = express();

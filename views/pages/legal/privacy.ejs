@@ -5,7 +5,7 @@
     <% include ../../partials/head %>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#fix-nav">
     <!-- Navbar -->
     <div id="nav">
         <% include ../../partials/nav %>
@@ -41,7 +41,7 @@
                 </div>
 
                 <!-- Privacy policy -->
-                <div class="col col-9" data-spy="scroll" data-target="#fix-nav">
+                <div class="col col-9" id="privacy-col">
                     <h2 id="introduction">
                         Introduction
                     </h2>
@@ -949,10 +949,10 @@
     <script>
         $(window).scroll(function () {
             if ($(window).scrollTop() > 100) {
-                $('#fix-nav').addClass('affix');
-                $('#fix-nav').scrollspy();
+                ('#fix-nav').addClass('affix');
+                ('#fix-nav').scrollspy();
             } else {
-                $('#fix-nav').removeClass('affix');
+                ('#fix-nav').removeClass('affix');
             }
         });
     </script>

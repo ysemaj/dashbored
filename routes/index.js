@@ -30,8 +30,18 @@ router.get('/sitemap', function (req, res, next) {
   res.render('sitemap', { title: 'Sitemap' });
 });
 
+router.get('/sign-in', function (req, res, next) {
+  res.render('sign-in', {title: 'Sign In'});
+});
+
 router.get('/register', function (req, res, next) {
   res.render('register', { title: 'Register' });
+});
+
+router.get('/forgot-password', function (req, res, next) {
+  res.render('forgot-password', {
+    title: 'Forgot Password'
+  });
 });
 
 router.get('/sitemap', function (req, res, next) {

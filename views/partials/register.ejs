@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col-md-6 mb-3">
                 <label for="firstName">First name</label><span class="text-muted">*</span>
-                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                <input type="text" class="form-control reg" id="firstName" placeholder="" value="" required>
                 <div class="invalid-feedback">
                     Valid first name is required.
                 </div>
@@ -28,7 +28,7 @@
 
             <div class="col-md-6 mb-3">
                 <label for="lastName">Last name</label><span class="text-muted">*</span>
-                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                <input type="text" class="form-control reg" id="lastName" placeholder="" value="" required>
                 <div class="invalid-feedback">
                     Valid last name is required.
                 </div>
@@ -38,7 +38,7 @@
         <!-- Email -->
         <div class="mb-3">
             <label for="email">Email <span class="text-muted">*</span></label>
-            <input type="email" class="form-control" id="email" placeholder="">
+            <input type="email" class="form-control reg" id="email" placeholder="" required>
             <div class="invalid-feedback">
                 Please enter a valid email address.
             </div>
@@ -51,7 +51,7 @@
                                 Settings"><a href="#" class="dotted-tooltip" data-toggle="tooltip"
                         data-placement="right" title="Required to enable MFA"><i
                             class="fas fa-info-circle"></i></a></label>
-            <input type="phone" class="form-control" id="phone" placeholder="">
+            <input type="phone" class="form-control reg" id="phone" placeholder="">
             <small class="text-muted">Standard call, messaging or data rates may apply.</small>
             <div class="invalid-feedback">
                 Please enter a valid phone number.
@@ -62,7 +62,7 @@
         <div class="mb-3">
             <label for="password">Password</label><span class="text-muted">*</span>
             <label for="inputPassword" class="sr-only">Password</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="" required="">
+            <input type="password" class="form-control reg" id="inputPassword" placeholder="" required>
             <div class="invalid-feedback">
                 Please enter a valid password.
             </div>
@@ -72,7 +72,7 @@
         <div class="mb-3">
             <label for="confirmPassword">Confirm password</label><span class="text-muted">*</span>
             <label for="inputPassword" class="sr-only">Password</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="" required="">
+            <input type="password" class="form-control reg" id="inputConfirmPassword" placeholder="" required>
             <div class="invalid-feedback">
                 Please enter a valid password.
             </div>
@@ -80,9 +80,9 @@
 
         <div class="mb-3" id="disclaimer">
             <small class="text-muted">By clicking Register you are agreeing to our <a href="legal/privacy">privacy
-                    policy</a>, <a href="legal/user-agreement">user
-                    agreement</a>, and <a href="legal/terms">terms and
-                    conditions</a>.</small>
+                    policy</a>, <a href="legal/terms">terms and
+                    conditions</a>, and <a href="legal/user-agreement">user
+                    agreement</a>.</small>
         </div>
     </form>
 </div>

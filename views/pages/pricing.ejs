@@ -33,7 +33,7 @@
                                 <label class="text-muted pr-3">Annual</label>
                                 <input type="checkbox" checked data-toggle="toggle" data-onstyle="primary"
                                     data-offstyle="light" data-width="50" data-height="10" data-size="xs" data-on=" "
-                                    data-off=" " data-style="slow" onClick="togglePricing()">
+                                    data-off=" " data-style="slow" id="togglePricing">
                                 <label class="text-muted pl-3">Monthly</label>
                             </div>
                         </div>
@@ -51,14 +51,20 @@
                         <div class="sub card mb-5 mb-lg-0">
                             <div class="card-body">
                                 <h5 class="card-title text-muted text-uppercase text-center">Free</h5>
-                                <h6 class="card-price text-center">£0<span class="period">/month</span></h6>
+                                <h6 class="card-price text-center">
+                                    <% if ( togglePricingVal = true ) { %>
+                                    £0
+                                    <% } else { %>
+                                    £10
+                                    <% } %><span class="period">/month</span></h6>
                                 <hr>
                                 <ul class="fa-ul">
                                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Single User</li>
-                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>1GB Storage</li>
-                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>100MB Storage</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>3 Private Projects
                                     </li>
-                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access
+                                    </li>
                                     <li class="text-muted"><span class="fa-li"><i
                                                 class="fas fa-times"></i></span>Unlimited
                                         Private Projects</li>
