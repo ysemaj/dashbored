@@ -2,49 +2,49 @@
 To-do list created on 10 May 2020 for future development tasks.
 
 ## General
-[ ] Javascript
-    [ ] Add loading animations using animate.js
-    [ ] Refactor main.js
-    [ ] Re-enable 3rd party integrations
-[ ] CSS
-    [ ] Refactor into specific files
-    [ ] Sort order of styles
-    [ ] Include cross-browser support attributes
-    [ ] Merge styles using , separator
-[ ] Includes
-    [ ] SEO integration via NPM
-    [ ] Enable CORS
-    [ ] Enable helmet
+- [ ] Javascript
+    - [ ] Add loading animations using animate.js
+    - [ ] Refactor main.js
+    - [ ] Re-enable 3rd party integrations
+- [ ] CSS
+    - [ ] Refactor into specific files
+    - [ ] Sort order of styles
+    - [ ] Include cross-browser support attributes
+    - [ ] Merge styles using , separator
+- [ ] Includes
+    - [ ] SEO integration via NPM
+    - [ ] Enable CORS
+    - [ ] Enable helmet
 
 ## INDEX
 
-[ ] Splash
-    [ ] Change ```background-color``` so that overflow-y is orange
-    [ ] Align ```logo-particles``` vertically when browser width is re-sized
-[ ] Features
-    [ ] Add hover to logos
-    [ ] Update text to highlight best features
-    [ ] ...
-[ ] About
-    [ ] Re-design
-    [ ] Include dynamic figures that update using API
-    [ ] Countup.js
-    [ ] ...
-[ ] Partners
-    [ ] Calculate method of achieving smoothscroll on logos
-    [ ] ...
-[ ] Customers
-    [ ] Remove until *beta* is released
-[ ] Newsletter
-    [ ] Move ```<button>``` inside ```<input>```
-    [ ] Integrate Mailchimp API and body-parser
-[ ] Footer
-    [ ] Link 'made with ❤ in Shrewsbury, United Kingdom' to GitHub repositry
-[ ] Cookies
-    [ ] Add cookie modal
-    [ ] Store preference
-        [ ] Local storage
-        [ ] DynamoDB
+- [ ] Splash
+    - [ ] Change ```background-color``` so that overflow-y is orange
+    - [ ] Align ```logo-particles``` vertically when browser width is re-sized
+- [ ] Features
+    - [ ] Add hover to logos
+    - [ ] Update text to highlight best features
+    - [ ] ...
+- [ ] About
+    - [ ] Re-design
+    - [ ] Include dynamic figures that update using API
+    - [ ] Countup.js
+    - [ ] ...
+- [ ] Partners
+    - [ ] Calculate method of achieving smoothscroll on logos
+    - [ ] ...
+- [ ] Customers
+    - [ ] Remove until *beta* is released
+- [ ] Newsletter
+    - [ ] Move ```<button>``` inside ```<input>```
+    - [ ] Integrate Mailchimp API and body-parser
+- [ ] Footer
+    - [ ] Link 'made with ❤ in Shrewsbury, United Kingdom' to GitHub repositry
+- [ ] Cookies
+    - [ ] Add cookie modal
+    - [ ] Store preference
+        - [ ] Local storage
+        - [ ] DynamoDB
 
 ## Navigation
 
