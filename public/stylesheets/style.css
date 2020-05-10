@@ -25,11 +25,19 @@ html {
     scroll-behavior: smooth !important;
 }
 
-body {
+body,
+nav,
+main,
+footer {
     background-color: var(--dashbored-background);
     text-align: justify !important;
-    position: relative !important;
     padding-right: none !important;
+    z-index: -10;
+}
+
+main {
+    padding-top: 200px;
+    position: relative;
 }
 
 #logo-img {
@@ -100,7 +108,8 @@ a:hover {
 }
 
 #navbar {
-    padding-right: 0 !important -webkit-transition: all 0.2s ease;
+    padding-right: 0 !important;
+    -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;

@@ -1,4 +1,5 @@
 # TODO
+To-do list created on 10 May 2020 for future development tasks.
 
 ## General
 [ ] Javascript

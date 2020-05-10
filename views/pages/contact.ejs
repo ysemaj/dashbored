@@ -1,18 +1,16 @@
-<!doctype html>
-<html lang="en">
+<html>
 
 <head>
     <% include ../partials/head %>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <div id="nav">
+    <section id="nav">
         <% include ../partials/nav %>
-    </div>
+    </section>
 
-    <div class="container">
-        <h1 class="h1-responsive mb-4">Contact</h1>
+    <main id="content" class="container">
+        <h1 class="h1-responsive mb-4"><%- title %></h1>
         <div class="row">
             <div class="col">
                 <p class="text-muted pr-5 greyblue">We aim to respond to most messages in three
@@ -84,10 +82,9 @@
                 </section>
             </div>
         </div>
-    </div>
+    </main>
 
-    <!-- Footer -->
-    <footer id="footer" class="container">
+    <footer id="footer">
         <% include ../partials/footer %>
     </footer>
 </body>

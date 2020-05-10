@@ -2,18 +2,17 @@
 <html lang="en">
 
 <head>
-    <% include ../../partials/head %>
+    <% include ../../partials/head.ejs %>
 </head>
 
 <body data-spy="scroll" data-target="#fix-nav">
-    <!-- Navbar -->
-    <div id="nav">
+    <section id="nav">
         <% include ../../partials/nav %>
-    </div>
+    </section>
 
-    <div class="legal-wrapper">
+    <main id="content" class="legal-wrapper">
         <div class="container-fluid">
-            <h1>User Agreement</h1>
+            <h1 class="h1"><%- title %></h1>
             <hr>
             <div class="row">
                 <div class="col">
@@ -49,11 +48,14 @@
                     <p>
                         Welcome to dashbored's terms and conditions document.
                     </p>
-
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <footer id="footer">
+        <% include ../../partials/footer %>
+    </footer>
 
     <script>
         $(window).scroll(function () {
@@ -65,11 +67,6 @@
             }
         });
     </script>
-
-    <!-- Footer -->
-    <footer id="footer" class="container">
-        <% include ../../partials/footer %>
-    </footer>
 </body>
 
 </html>

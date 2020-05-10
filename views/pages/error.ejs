@@ -1,18 +1,15 @@
-<!doctype html>
-<html lang="en">
+<html>
 
 <head>
     <% include ../partials/head %>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <div id="nav">
+    <section id="nav">
         <% include ../partials/nav %>
-    </div>
+    </section>
 
-
-    <div class="container">
+    <main id="content" class="container">
         <div class="text-center">
             <div class="error-code mb-2 mt-4">
                 <h1 class="display-1 font-weight-bold">404</h1>
@@ -34,13 +31,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
-    <!-- Footer -->
-    <footer id="footer" class="container">
+    <footer id="footer">
         <% include ../partials/footer %>
     </footer>
-
 </body>
 
 </html>
